@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário - Orkut</title>
+    
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        inframe {
+            width: 100%;
+            height: 100%;
+        }
+       #profile-picture{
+        width: 100%;
+        height: 100%;
+       }
+        #container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        #profile-header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        #profile-header img {
+            border-radius: 50%;
+            border: 4px solid #6b9cff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #6b9cff;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .profile-button {
+            background-color: #6b9cff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .profile-button:hover {
+            background-color: #476ad6;
+        }
+
+        #profile-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #profile-footer a {
+            color: #6b9cff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #profile-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="profile-header">
+            <img  src="https://i.ibb.co/KxPK6m0/Carlinhos.png" alt="Profile Picture">
+            <h1><%= user.name %></h1>
+            <p>E-mail: <%= user.email %></p>
+            <a href="#" class="profile-button">Adicionar aos Amigos</a>
+            <a href="#" class="profile-button">Enviar Mensagem</a>
+        </div>
+        <p><strong>Interesses:</strong> Tecnologia, Música, Esportes</p>
+        <p><strong>Sobre Mim:</strong> Olá! Sou um usuário do Orkut, adoro conhecer novas pessoas e fazer amizades. Sinta-se à vontade para me adicionar como amigo!</p>
+        <div id="profile-footer">
+            <a href="#">Editar Perfil</a> |
+            <a href="/users">Usuários</a> |
+            <a href="/logout">Logout</a>
+        </div>
+        <div id="profile-picture">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_Appw2sGt9A?si=EwgnoC_SDvLdBoz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
